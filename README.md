@@ -76,6 +76,13 @@ ros2 service call /onrobot_sd/move_shank onrobot_interfaces/srv/SetCommand "{com
 ```
 <img src="images/service.gif" height="200">  
 
+##### Run the 2FG7 gripper server in the real-world
+```bash
+ros2 launch onrobot_2fg7_tutorials server.launch.py
+ros2 service call /onrobot_2fg7/move onrobot_interfaces/srv/SetWidthForceSpeed "{width: 20.0, force: 100, speed: 80, wait: true}"
+ros2 service call /onrobot_2fg7/grip onrobot_interfaces/srv/SetWidthForceSpeed "{width: 10.0, force: 80, speed: 50, wait: true}"
+```
+
 ## Contributors
 
 We always welcome collaborators!

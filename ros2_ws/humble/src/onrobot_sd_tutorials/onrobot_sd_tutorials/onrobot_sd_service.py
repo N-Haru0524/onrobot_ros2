@@ -15,7 +15,7 @@ RET_FAIL = -1
 
 SCREW_DRIVER_ID = 0
 BIT_EXTENDER = 100
-IP_ADDRESS = "192.168.1.1"
+IP_ADDRESS = "192.168.0.5"
 
 
 class OnRobotSDServer(Node):

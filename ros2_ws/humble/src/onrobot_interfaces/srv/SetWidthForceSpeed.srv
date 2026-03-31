@@ -1,0 +1,7 @@
+float32 width
+int32 force
+int32 speed
+bool wait
+---
+bool success
+string message
